@@ -10,9 +10,9 @@ docker run -it -d --net host --name nps mazouri/nps
 > 由于nps是一款网络代理软件，所以对网卡要求有完整的控制权。请使用 `host` 模式运行，否则功能可能会失效
 
 ``` bash
-docker run -it -d --net host --name nps -v /data:/opt/nps/conf mazouri/nps
+docker run -it -d --net host --name nps -v /data:/nps/conf mazouri/nps
 ```
-> 将你本地的文件夹映射到容器内部路径 `/opt/nps/conf`
+> 将你本地的文件夹映射到容器内部路径 `/nps/conf`
 
 ### 2. 客户端下载
 https://github.com/cnlh/nps/releases

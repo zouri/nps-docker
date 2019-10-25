@@ -3,6 +3,5 @@
 cp -r /etc/nps_conf /tmp/nps_conf
 mv -n /tmp/nps_conf/* /nps/conf
 
-
 # execution
 /nps/nps

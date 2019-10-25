@@ -12,11 +12,11 @@ RUN git clone https://github.com/cnlh/nps /go/src/nps \
     && make
 RUN mkdir /opt/nps \
     && mv /go/src/nps/nps /opt/nps/ \
-    && mv /go/src/nps/conf /opt/nps/ \
-    && mv /go/src/nps/web /opt/nps/
+    && mv /go/src/nps/web /opt/nps/ \
+    && mv /go/src/nps/conf /etc/nps_conf
 
 FROM amd64/alpine:3.10.3
 COPY --from=build /opt/nps /opt/nps
-
-ENTRYPOINT ["/opt/nps/nps"]
+ADD run.sh /
+ENTRYPOINT ["sh", "/run.sh"]
 CMD []

@@ -10,7 +10,7 @@ RUN git clone https://github.com/cnlh/nps /go/src/nps \
     && git checkout -b _branch_build ${NPS_VERSION} \
     && go get -d -v ./... \
     && make
-RUN mkdir /opt/nps \
+RUN mkdir -p /opt/nps/conf \
     && mv /go/src/nps/nps /opt/nps/ \
     && mv /go/src/nps/web /opt/nps/ \
     && mv /go/src/nps/conf /etc/nps_conf

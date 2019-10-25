@@ -14,6 +14,6 @@ docker run -it -d --net host --name nps -v /data:/opt/nps/conf mazouri/nps
 ```
 > 将你本地的文件夹映射到容器内部路径 `/opt/nps/conf`
 
-2. ### 客户端下载
+### 2. 客户端下载
 https://github.com/cnlh/nps/releases
 > 根据OS架构下载指定客户端版本使用

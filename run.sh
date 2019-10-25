@@ -5,4 +5,4 @@ mv -n /tmp/nps_conf/* /nps/conf
 
 
 # execution
-/opt/nps/nps
+/nps/nps

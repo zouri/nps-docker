@@ -2,7 +2,7 @@
 FROM golang:alpine AS build
 MAINTAINER ZouRi.Ma "zourima@outlook.com"
 
-ENV NPS_VERSION v0.23.2
+ENV NPS_VERSION v0.24.0
 
 RUN apk add --no-cache -U make git
 RUN git clone https://github.com/cnlh/nps /go/src/nps \
